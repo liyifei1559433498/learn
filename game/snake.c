@@ -1,0 +1,1 @@
+int main(){  drawMap();  while (1)  {    keyDown();    if (!snakeStatus())      break;    createFood();    Sleep(snake.speed);  }   gotoxy(MAPWIDTH / 2, MAPHEIGHT / 2);  printf("Game Over!\n");  gotoxy(MAPWIDTH / 2, MAPHEIGHT / 2 + 1);  printf("本次游戏得分为：%d\n", sorce);  Sleep(5000);  return 0;}
