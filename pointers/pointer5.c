@@ -23,6 +23,7 @@ int main(void){
   printf("value of board[0][0]:%c\n",board[0][0]);
   printf("value of *board[0]:%c\n",*board[0]);
   printf("value of **board:%c\n",**board);
+  printf("value of *board:%p\n",*board);
   
   for(int i=0;i<9;++i){
     printf("the value of board[%d][%d] is %p.\n",(i)/3,i%3,&board[i/3][i%3]);
