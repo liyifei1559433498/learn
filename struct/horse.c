@@ -1,7 +1,7 @@
 #define __STDC_WANT_LIB_EXT1__ 1
 #include <stdio.h>
 
-typedef struct Horse horse;
+typedef struct Horse Horse;//如此，便可以使用Horse声明变量了@123。
 
 struct Horse{
   int age;
@@ -12,7 +12,7 @@ struct Horse{
 };
 
 int main(void){
-  struct Horse my_horse;
+  Horse my_horse;//@123  如果没有{typedef struct Horse Horse;}则需要在前面加“struct”
   
   printf("Enter the name of the horse:");
   scanf("%s",my_horse.name);

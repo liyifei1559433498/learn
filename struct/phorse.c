@@ -52,6 +52,7 @@ int main(void){
   for(int i = 0;i < hcount;++i){
     printf("%s有%d岁了, 身高%dcm,",phorses[i]->name,phorses[i]->age,phorses[i]->height);
     printf("父亲是%s，母亲是%s.\n",phorses[i]->father,phorses[i]->monther);
+    free(phorses[i]);
   }
   return 0;
 }
